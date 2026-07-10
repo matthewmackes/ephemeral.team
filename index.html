@@ -13,80 +13,96 @@
     <span class="logo">ephemeral<span class="accent">.team</span></span>
     <nav>
       <a href="#products">Products</a>
-      <a href="https://github.com/matthewmackes" target="_blank" rel="noopener">GitHub</a>
+      <a href="#about">About</a>
+      <a class="btn-cta" href="https://github.com/matthewmackes" target="_blank" rel="noopener">View on GitHub</a>
     </nav>
   </div>
 </header>
 
 <main>
   <section class="hero">
-    <div class="wrap">
-      <h1>Independent systems, built to run themselves.</h1>
+    <div class="wrap hero-inner">
+      <span class="eyebrow">Independent Systems</span>
+      <h1>Small team. Real infrastructure. Production-grade tools.</h1>
       <p class="lede">
-        Small team, real infrastructure. We build the tools we wish existed —
-        AI orchestration, real-time audio processing, and secure mesh
-        networking — and run them in production on our own hardware.
+        We build the tools we wish existed — AI orchestration, real-time
+        audio processing, and secure mesh networking — and run every one of
+        them in production on our own hardware.
       </p>
+      <div class="hero-actions">
+        <a class="btn-cta btn-lg" href="#products">Explore the products</a>
+        <a class="btn-text" href="https://github.com/matthewmackes" target="_blank" rel="noopener">See the source &rarr;</a>
+      </div>
     </div>
   </section>
 
   <section id="products" class="products">
     <div class="wrap">
-      <h2>Products</h2>
+      <span class="eyebrow">Products</span>
+      <h2>Three systems, one philosophy: build it right, run it yourself.</h2>
 
-      <article class="card">
-        <div class="card-head">
-          <h3>MACKESCODE AI Proxy</h3>
+      <div class="card-grid">
+        <article class="card">
           <span class="tag">AI infrastructure</span>
-        </div>
-        <p>
-          A private Claude Code launcher and Anthropic-compatible local proxy
-          for running multiple model backends side by side. A unified web
-          console layers on top: persistent terminal sessions, autonomy and
-          permission controls, cost and budget tracking, an image prompt
-          studio, and fleet-wide agent monitoring — all in one place.
-        </p>
-        <a class="repo-link" href="https://github.com/matthewmackes/MACKESCODE-AI-PROXY" target="_blank" rel="noopener">
-          View on GitHub &rarr;
-        </a>
-      </article>
+          <h3>MACKESCODE AI Proxy</h3>
+          <p>
+            A private Claude Code launcher and Anthropic-compatible local
+            proxy for running multiple model backends side by side. A
+            unified web console layers on top: persistent terminal sessions,
+            autonomy and permission controls, cost and budget tracking, an
+            image prompt studio, and fleet-wide agent monitoring — all in
+            one place.
+          </p>
+          <a class="card-link" href="https://github.com/matthewmackes/MACKESCODE-AI-PROXY" target="_blank" rel="noopener">
+            View on GitHub &rarr;
+          </a>
+        </article>
 
-      <article class="card">
-        <div class="card-head">
-          <h3>MAP2 &mdash; Mackes Audio Platform 2</h3>
+        <article class="card">
           <span class="tag">Real-time audio</span>
-        </div>
-        <p>
-          A modular, real-time audio processing platform that turns commodity
-          Linux hardware into a professional-grade guitar and audio rig.
-          A C++ JUCE engine, Python FastAPI backend, and React dashboard
-          combine to deliver neural amp modeling, convolution reverb, and a
-          full effects chain at single-digit millisecond latency — with
-          multi-node clustering over Ethernet for scaling a whole band on one
-          shared digital backbone.
-        </p>
-        <a class="repo-link" href="https://github.com/matthewmackes/map2-audio" target="_blank" rel="noopener">
-          View on GitHub &rarr;
-        </a>
-      </article>
+          <h3>MAP2 &mdash; Mackes Audio Platform 2</h3>
+          <p>
+            A modular, real-time audio processing platform that turns
+            commodity Linux hardware into a professional-grade guitar and
+            audio rig. A C++ JUCE engine, Python FastAPI backend, and React
+            dashboard combine to deliver neural amp modeling, convolution
+            reverb, and a full effects chain at single-digit millisecond
+            latency — with multi-node clustering over Ethernet for scaling a
+            whole band on one shared digital backbone.
+          </p>
+          <a class="card-link" href="https://github.com/matthewmackes/map2-audio" target="_blank" rel="noopener">
+            View on GitHub &rarr;
+          </a>
+        </article>
 
-      <article class="card">
-        <div class="card-head">
-          <h3>MCNF &mdash; Magic Mesh</h3>
+        <article class="card">
           <span class="tag">Secure networking</span>
-        </div>
-        <p>
-          A secure, no-fixed-center workgroup mesh — with native Rust,
-          IBM-Carbon-styled GUIs — for stock Fedora Cosmic. Up to eight
-          machines form one private encrypted workgroup with no central
-          server: any node can author fleet policy, every node enforces it,
-          running over a Nebula overlay with etcd coordination and Syncthing
-          replication.
-        </p>
-        <a class="repo-link" href="https://github.com/matthewmackes/magic-mesh" target="_blank" rel="noopener">
-          View on GitHub &rarr;
-        </a>
-      </article>
+          <h3>MCNF &mdash; Magic Mesh</h3>
+          <p>
+            A secure, no-fixed-center workgroup mesh — with native Rust,
+            IBM-Carbon-styled GUIs — for stock Fedora Cosmic. Up to eight
+            machines form one private encrypted workgroup with no central
+            server: any node can author fleet policy, every node enforces
+            it, running over a Nebula overlay with etcd coordination and
+            Syncthing replication.
+          </p>
+          <a class="card-link" href="https://github.com/matthewmackes/magic-mesh" target="_blank" rel="noopener">
+            View on GitHub &rarr;
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap about-inner">
+      <h2>Built independently. Run in production.</h2>
+      <p>
+        Every product here started as an internal need, not a pitch deck.
+        We design, build, and operate each one ourselves — which means the
+        code you find in these repos is the same code running our own
+        infrastructure today.
+      </p>
     </div>
   </section>
 </main>
