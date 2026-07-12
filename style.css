@@ -57,6 +57,7 @@ h1, h2, h3 {
 
 .eyebrow::before {
   content: "// ";
+  content: "// " / "";
 }
 
 /* Header */
