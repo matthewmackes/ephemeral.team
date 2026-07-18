@@ -1,0 +1,28 @@
+<svg viewBox="0 0 460 180" width="460" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MDE Construct — mesh-native desktop OS">
+  <rect x="0.5" y="0.5" width="459" height="179" rx="16" fill="#ffffff" stroke="#e6eaee"/>
+
+  <!-- emblem tile -->
+  <rect x="36" y="46" width="88" height="88" rx="18" fill="#0d9488" fill-opacity="0.08" stroke="#0d9488" stroke-opacity="0.18"/>
+  <svg x="52" y="62" width="56" height="56" viewBox="0 0 120 120" fill="none">
+    <polygon points="60,18 98,40 60,60 22,40" fill="#0d9488" fill-opacity="0.14"/>
+    <g stroke="#0d9488" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M60 18 L98 40 L98 80 L60 102 L22 80 L22 40 Z"/>
+      <path d="M60 60 L22 40 M60 60 L98 40 M60 60 L60 102"/>
+    </g>
+    <g fill="#0d9488">
+      <circle cx="60" cy="18" r="3.6"/>
+      <circle cx="98" cy="40" r="3.6"/>
+      <circle cx="98" cy="80" r="3.6"/>
+      <circle cx="60" cy="102" r="3.6"/>
+      <circle cx="22" cy="80" r="3.6"/>
+      <circle cx="22" cy="40" r="3.6"/>
+      <circle cx="60" cy="60" r="4.2" fill="#0b7c72"/>
+    </g>
+  </svg>
+
+  <!-- wordmark -->
+  <text x="150" y="82" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="30" font-weight="600" fill="#16191d">MDE Construct</text>
+  <text x="150" y="112" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="12.5" font-weight="500" letter-spacing="1.5" fill="#0d9488">// MESH-NATIVE DESKTOP OS</text>
+  <line x1="150" y1="126" x2="414" y2="126" stroke="#e6eaee"/>
+  <text x="150" y="146" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="11" letter-spacing="0.5" fill="#5b6470">Sheet E-03 · Designed on Fedora 44</text>
+</svg>
