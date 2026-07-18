@@ -6,6 +6,13 @@
   --border: #e6eaee;
   --accent: #0d9488;
   --accent-dark: #0b7c72;
+  /* Brand palette — brand sheet v1.0 */
+  --ink: #16191d;
+  --teal: #0d9488;
+  --teal-bright: #2dd4bf;
+  --slate: #5b6a6e;
+  --mist: #eef3f2;
+  --white: #ffffff;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
@@ -118,6 +125,9 @@ h1, h2, h3 {
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -126,6 +136,15 @@ h1, h2, h3 {
 
 .logo .accent {
   color: var(--accent);
+}
+
+/* The dissolve — inline mark: the dot of .team, evaporating up a diagonal */
+.logo-mark {
+  width: 30px;
+  height: auto;
+  flex-shrink: 0;
+  color: var(--accent);
+  overflow: visible;
 }
 
 nav {
@@ -181,18 +200,27 @@ nav a:not(.btn-cta):hover {
   color: var(--accent);
 }
 
-/* Hero */
+/* Hero — the banner */
 
 .hero {
+  position: relative;
+  overflow: hidden;
   background:
     radial-gradient(480px circle at 100% 0%, rgba(13, 148, 136, 0.08), transparent 60%),
     radial-gradient(480px circle at 0% 100%, rgba(13, 148, 136, 0.06), transparent 60%);
   border-bottom: 1px solid var(--border);
 }
 
-.hero-inner {
-  padding: 120px 24px 96px;
-  max-width: 760px;
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 56px;
+  padding: 104px 24px 96px;
+}
+
+.hero-copy {
+  max-width: 620px;
 }
 
 .hero h1 {
@@ -212,6 +240,58 @@ nav a:not(.btn-cta):hover {
   display: flex;
   align-items: center;
   gap: 28px;
+}
+
+/* Hero mark — the dissolve on ink (teal-bright on ink, per brand rules) */
+
+.hero-mark {
+  position: relative;
+  background: var(--ink);
+  border: 1px solid rgba(45, 212, 191, 0.18);
+  border-radius: 20px;
+  padding: 40px 36px 32px;
+  box-shadow: 0 24px 60px rgba(16, 25, 29, 0.22);
+}
+
+.dissolve {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+/* The mark itself — always rendered, never restyled */
+.dissolve .d-core { fill: var(--teal-bright); }
+.dissolve .d-hole { fill: var(--ink); }
+.dissolve .d-particle { fill: var(--teal-bright); }
+
+/* Evaporating ghosts — motion only; each drifts up the diagonal and fades */
+.dissolve .ghost {
+  fill: var(--teal-bright);
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: 0;
+  animation: evaporate 3.4s cubic-bezier(0.4, 0, 0.5, 1) infinite;
+}
+.dissolve .ghost.g2 { animation-delay: 1.13s; }
+.dissolve .ghost.g3 { animation-delay: 2.26s; }
+
+@keyframes evaporate {
+  0%   { transform: translate(0, 0) scale(1);   opacity: 0; }
+  12%  { opacity: 0.85; }
+  100% { transform: translate(78px, -70px) scale(0.12); opacity: 0; }
+}
+
+.mark-tagline {
+  margin: 24px 0 0;
+  color: var(--mist);
+  font-size: 0.98rem;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.mark-tagline span {
+  color: var(--teal-bright);
 }
 
 /* Products */
@@ -440,6 +520,14 @@ nav a:not(.btn-cta):hover {
   .card-grid {
     grid-template-columns: 1fr;
   }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 80px 24px 72px;
+  }
+  .hero-mark {
+    max-width: 420px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -449,8 +537,9 @@ nav a:not(.btn-cta):hover {
   nav a:not(.btn-cta) {
     display: none;
   }
-  .hero-inner {
-    padding: 88px 24px 64px;
+  .hero-grid {
+    padding: 64px 24px 56px;
+    gap: 32px;
   }
   .hero h1 {
     font-size: 2.2rem;
@@ -459,6 +548,9 @@ nav a:not(.btn-cta):hover {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+  }
+  .hero-mark {
+    padding: 32px 28px 26px;
   }
   .footer-bottom {
     flex-direction: column;
@@ -798,5 +890,9 @@ nav a:not(.btn-cta):hover {
   .feature:hover,
   .btn-cta:active {
     transform: none;
+  }
+  /* Freeze the dissolve to its static three-particle mark */
+  .dissolve .ghost {
+    display: none;
   }
 }

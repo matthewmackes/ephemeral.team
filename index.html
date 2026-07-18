@@ -86,7 +86,15 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <span class="logo">ephemeral<span class="accent">.team</span></span>
+    <span class="logo">
+      <svg class="logo-mark" viewBox="0 0 44 26" fill="none" aria-hidden="true">
+        <circle cx="9" cy="17" r="6.5" fill="currentColor"/>
+        <circle cx="22" cy="11" r="3.25" fill="currentColor" opacity="0.72"/>
+        <circle cx="31" cy="7" r="1.6" fill="currentColor" opacity="0.5"/>
+        <circle cx="37" cy="4.6" r="1" fill="currentColor" opacity="0.32"/>
+      </svg>
+      <span class="logo-word">ephemeral<span class="accent">.team</span></span>
+    </span>
     <nav>
       <a href="#products">Products</a>
       <a href="#about">About</a>
@@ -98,18 +106,36 @@
 
 <main id="main">
   <section class="hero">
-    <div class="wrap hero-inner">
-      <span class="eyebrow">Independent Systems</span>
-      <h1>Small team. Real infrastructure. Production-grade tools.</h1>
-      <p class="lede">
-        We build the tools we wish existed — AI orchestration, real-time
-        audio processing, and secure mesh networking — and run every one of
-        them in production on our own hardware.
-      </p>
-      <div class="hero-actions">
-        <a class="btn-cta btn-lg" href="#products">Explore the products</a>
-        <a class="btn-text" href="https://github.com/matthewmackes" target="_blank" rel="noopener">See the source &rarr;</a>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Independent Systems</span>
+        <h1>Small team. Real infrastructure. Production-grade tools.</h1>
+        <p class="lede">
+          We build the tools we wish existed — AI orchestration, real-time
+          audio processing, and secure mesh networking — and run every one of
+          them in production on our own hardware.
+        </p>
+        <div class="hero-actions">
+          <a class="btn-cta btn-lg" href="#products">Explore the products</a>
+          <a class="btn-text" href="https://github.com/matthewmackes" target="_blank" rel="noopener">See the source &rarr;</a>
+        </div>
       </div>
+
+      <aside class="hero-mark">
+        <svg class="dissolve" viewBox="0 0 200 150" aria-hidden="true">
+          <!-- evaporating ghosts — motion only, drift up the diagonal and fade -->
+          <circle class="ghost g1" cx="70" cy="96" r="11"/>
+          <circle class="ghost g2" cx="70" cy="96" r="11"/>
+          <circle class="ghost g3" cx="70" cy="96" r="11"/>
+          <!-- the mark: the dot of .team + three particles, each half the last -->
+          <circle class="d-core" cx="52" cy="112" r="26"/>
+          <circle class="d-hole" cx="52" cy="112" r="9.5"/>
+          <circle class="d-particle" cx="104" cy="72" r="13"/>
+          <circle class="d-particle" cx="140" cy="43" r="6.5"/>
+          <circle class="d-particle" cx="163" cy="24" r="3.25"/>
+        </svg>
+        <p class="mark-tagline">here for the work. <span>gone when it&rsquo;s done.</span></p>
+      </aside>
     </div>
   </section>
 
