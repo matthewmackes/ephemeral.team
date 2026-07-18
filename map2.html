@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAP2 — Mackes Audio Platform 2 — ephemeral.team</title>
+<meta name="description" content="MAP2 — a modular, real-time audio processing platform that turns commodity Linux hardware into a professional-grade rig. Features, languages, testing, and compliance.">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://ephemeral.team/map2.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23ffffff' stroke='%23e6eaee' stroke-width='2'/><text x='16' y='23' font-family='monospace' font-size='17' font-weight='700' text-anchor='middle' fill='%230d9488'>//</text></svg>">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ephemeral.team">
+<meta property="og:title" content="MAP2 — Mackes Audio Platform 2 — ephemeral.team">
+<meta property="og:description" content="A modular, real-time audio processing platform that turns commodity Linux hardware into a professional-grade audio rig.">
+<meta property="og:url" content="https://ephemeral.team/map2.html">
+<meta property="og:image" content="https://ephemeral.team/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ephemeral.team/og-card.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "@id": "https://ephemeral.team/#map2",
+  "name": "MAP2 — Mackes Audio Platform 2",
+  "description": "A modular, real-time audio processing platform that turns commodity Linux hardware into a professional-grade audio rig.",
+  "url": "https://ephemeral.team/map2.html",
+  "codeRepository": "https://github.com/matthewmackes/map2-audio",
+  "programmingLanguage": ["C++", "Python", "TypeScript"],
+  "operatingSystem": "Linux (Fedora 44)",
+  "author": { "@id": "https://ephemeral.team/#org" }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html" style="text-decoration:none">ephemeral<span class="accent">.team</span></a>
+    <nav>
+      <a href="index.html#products">Products</a>
+      <a href="index.html#about">About</a>
+      <a href="https://matthewmackes.com/" rel="me">R&eacute;sum&eacute;</a>
+      <a class="btn-cta" href="https://github.com/matthewmackes/map2-audio" target="_blank" rel="noopener">View on GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="subhero">
+    <div class="wrap subhero-inner">
+      <p class="breadcrumb">
+        <a href="index.html">ephemeral.team</a>
+        <span class="sep">/</span>
+        <a href="index.html#products">Products</a>
+        <span class="sep">/</span>
+        MAP2 &mdash; Mackes Audio Platform 2
+      </p>
+      <span class="tag">Real-time audio</span>
+      <h1>MAP2 &mdash; Mackes Audio Platform 2</h1>
+      <p class="lede">
+        A modular, real-time audio processing platform that turns commodity
+        Linux hardware into a professional-grade guitar and audio rig &mdash;
+        neural amp modeling, convolution reverb, and a full effects chain at
+        single-digit millisecond latency, scalable across nodes over Ethernet.
+      </p>
+      <div class="subhero-actions">
+        <a class="btn-cta" href="https://github.com/matthewmackes/map2-audio/releases" target="_blank" rel="noopener">Releases &rarr;</a>
+        <a class="btn-text" href="https://github.com/matthewmackes/map2-audio" target="_blank" rel="noopener">Source Code &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="spec-strip" aria-label="Project specifications">
+    <div class="wrap">
+      <dl class="spec-grid">
+        <div class="spec-item"><dt>Category</dt><dd>Real-time audio</dd></div>
+        <div class="spec-item"><dt>Languages</dt><dd>C++ &middot; Python &middot; TypeScript</dd></div>
+        <div class="spec-item"><dt>Platform</dt><dd>Linux &middot; Fedora&nbsp;44</dd></div>
+        <div class="spec-item"><dt>Sheet</dt><dd>E-02</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="subsection">
+    <div class="wrap">
+      <span class="eyebrow">Features</span>
+      <h2>A professional rig built from commodity parts.</h2>
+      <p class="section-lede">
+        MAP2 is modular by design: a low-latency DSP engine at the core, a
+        control backend around it, and a dashboard on top &mdash; scaling from
+        a single box to a whole band on one shared backbone.
+      </p>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3><span class="idx">01</span>Neural amp modeling</h3>
+          <p>Machine-learned amp and cabinet models reproduce the feel of real hardware in real time.</p>
+        </div>
+        <div class="feature">
+          <h3><span class="idx">02</span>Convolution reverb</h3>
+          <p>Impulse-response convolution places your signal in real acoustic spaces with studio fidelity.</p>
+        </div>
+        <div class="feature">
+          <h3><span class="idx">03</span>Full effects chain</h3>
+          <p>A composable rack of effects &mdash; drive, modulation, delay, and more &mdash; ordered however you like.</p>
+        </div>
+        <div class="feature">
+          <h3><span class="idx">04</span>Single-digit-ms latency</h3>
+          <p>The C++ engine is tuned for round-trip latency low enough to play live without perceptible delay.</p>
+        </div>
+        <div class="feature">
+          <h3><span class="idx">05</span>Multi-node clustering</h3>
+          <p>Nodes link over Ethernet into one shared digital backbone, scaling a whole band across machines.</p>
+        </div>
+        <div class="feature">
+          <h3><span class="idx">06</span>Modular architecture</h3>
+          <p>Engine, backend, and dashboard are cleanly separated, so each part can evolve independently.</p>
+        </div>
+        <div class="feature">
+          <h3><span class="idx">07</span>Web dashboard</h3>
+          <p>A React control surface for patching the signal chain, tuning parameters, and monitoring the rig.</p>
+        </div>
+        <div class="feature">
+          <h3><span class="idx">08</span>Commodity hardware</h3>
+          <p>Runs on stock Linux boxes &mdash; no specialised DSP silicon required to reach pro-grade results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="subsection">
+    <div class="wrap">
+      <span class="eyebrow">Languages used</span>
+      <h2>The right language for each layer.</h2>
+      <p class="section-lede">
+        MAP2 pairs a native DSP engine with a scripting backend and a typed
+        web front-end &mdash; each chosen for what that layer demands.
+      </p>
+      <div class="lang-list">
+        <div class="lang">
+          <div class="lang-name"><strong>C++</strong><span class="lang-role">JUCE DSP engine</span></div>
+          <p>The real-time audio core, built on JUCE, where every microsecond of latency and every allocation counts.</p>
+        </div>
+        <div class="lang">
+          <div class="lang-name"><strong>Python</strong><span class="lang-role">FastAPI backend</span></div>
+          <p>The control and orchestration backend &mdash; a FastAPI service coordinating the engine, clustering, and state.</p>
+        </div>
+        <div class="lang">
+          <div class="lang-name"><strong>TypeScript</strong><span class="lang-role">React dashboard</span></div>
+          <p>The browser dashboard, typed end to end for a reliable control surface over the signal chain.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="subsection">
+    <div class="wrap">
+      <span class="eyebrow">Testing</span>
+      <h2>Measured where milliseconds matter.</h2>
+      <p class="section-lede">
+        Real-time audio fails audibly, so MAP2 is validated with signal-level
+        correctness tests and hard latency budgets alongside conventional
+        unit and integration coverage.
+      </p>
+      <div class="panel">
+        <ul class="checklist">
+          <li><strong>DSP unit tests</strong> validate each processing block against known reference output.</li>
+          <li><strong>Null tests</strong> confirm bit-accurate behaviour where a stage should be transparent.</li>
+          <li><strong>Latency benchmarks</strong> hold round-trip timing inside the single-digit-millisecond budget.</li>
+          <li><strong>Real-time safety checks</strong> guard the audio thread against allocations and locks.</li>
+          <li><strong>Cluster integration tests</strong> exercise multi-node sync across the Ethernet backbone.</li>
+          <li><strong>Dashboard type checks</strong> keep the TypeScript control surface in step with the backend.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="subsection">
+    <div class="wrap">
+      <span class="eyebrow">Compliance &amp; licensing</span>
+      <h2>Runs on your gear, on your terms.</h2>
+      <p class="section-lede">
+        MAP2 is built to operate entirely on hardware you own, with dependency
+        licensing tracked and audio staying on your local network.
+      </p>
+      <div class="panel">
+        <ul class="checklist">
+          <li><strong>Self-hosted</strong> &mdash; the engine and backend run on your own Linux machines, no cloud required.</li>
+          <li><strong>Local-network audio</strong> &mdash; clustering traffic stays on your Ethernet segment.</li>
+          <li><strong>License tracking</strong> &mdash; JUCE and third-party dependency terms are honoured and documented.</li>
+          <li><strong>Reproducible builds</strong> &mdash; pinned toolchains produce the same binaries on Fedora&nbsp;44.</li>
+          <li><strong>No telemetry</strong> &mdash; the platform does not phone home during operation.</li>
+          <li><strong>Open source</strong> &mdash; the implementation is published for inspection and reuse.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="subpage-cta">
+    <h2>Back to the catalog</h2>
+    <a class="btn-cta btn-lg" href="index.html#products">All three products &rarr;</a>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-contact">
+      <span class="footer-heading">Contact</span>
+      <div class="footer-links">
+        <a href="https://matthewmackes.com" target="_blank" rel="me noopener">R&eacute;sum&eacute; &mdash; matthewmackes.com</a>
+        <a href="https://www.linkedin.com/in/matthewmackes/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:matthewmackes@gmail.com">matthewmackes@gmail.com</a>
+        <a href="https://github.com/matthewmackes" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Matthew Mackes &middot; Build it right. Run it yourself.</span>
+      <a href="https://github.com/matthewmackes" target="_blank" rel="noopener">github.com/matthewmackes</a>
+    </div>
+    <div class="footer-register">
+      <span>EPHEMERAL.TEAM &middot; SHEET E-02 &middot; MAP2 AUDIO PLATFORM &middot; REV. A &middot; 2026</span>
+      <span>DESIGNED ON FEDORA 44 &middot; BUFFALO, NY</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

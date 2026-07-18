@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MACKESCODE AI Proxy — ephemeral.team</title>
+<meta name="description" content="MACKESCODE AI Proxy — a private Anthropic-compatible local proxy and Claude Code launcher with a unified web console. Features, languages, testing, and compliance.">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://ephemeral.team/mackescode.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23ffffff' stroke='%23e6eaee' stroke-width='2'/><text x='16' y='23' font-family='monospace' font-size='17' font-weight='700' text-anchor='middle' fill='%230d9488'>//</text></svg>">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ephemeral.team">
+<meta property="og:title" content="MACKESCODE AI Proxy — ephemeral.team">
+<meta property="og:description" content="A private Anthropic-compatible local proxy and Claude Code launcher with a unified web console.">
+<meta property="og:url" content="https://ephemeral.team/mackescode.html">
+<meta property="og:image" content="https://ephemeral.team/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ephemeral.team/og-card.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "@id": "https://ephemeral.team/#mackescode",
+  "name": "MACKESCODE AI Proxy",
+  "description": "Private Anthropic-compatible proxy and Claude Code launcher with a unified web console.",
+  "url": "https://ephemeral.team/mackescode.html",
+  "codeRepository": "https://github.com/matthewmackes/MACKESCODE-AI-PROXY",
+  "programmingLanguage": "Python",
+  "operatingSystem": "Linux (Fedora 44)",
+  "author": { "@id": "https://ephemeral.team/#org" }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html" style="text-decoration:none">ephemeral<span class="accent">.team</span></a>
+    <nav>
+      <a href="index.html#products">Products</a>
+      <a href="index.html#about">About</a>
+      <a href="https://matthewmackes.com/" rel="me">R&eacute;sum&eacute;</a>
+      <a class="btn-cta" href="https://github.com/matthewmackes/MACKESCODE-AI-PROXY" target="_blank" rel="noopener">View on GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="subhero">
+    <div class="wrap subhero-inner">
+      <p class="breadcrumb">
+        <a href="index.html">ephemeral.team</a>
+        <span class="sep">/</span>
+        <a href="index.html#products">Products</a>
+        <span class="sep">/</span>
+        MACKESCODE AI Proxy
+      </p>
+      <span class="tag">AI infrastructure</span>
+      <h1>MACKESCODE AI Proxy</h1>
+      <p class="lede">
+        A private Claude Code launcher and Anthropic-compatible local proxy
+        for running multiple model backends side by side &mdash; wrapped in a
+        unified web console for persistent sessions, permission controls,
+        cost tracking, and fleet-wide agent monitoring.
+      </p>
+      <div class="subhero-actions">
+        <a class="btn-cta" href="https://github.com/matthewmackes/MACKESCODE-AI-PROXY/releases" target="_blank" rel="noopener">Releases &rarr;</a>
+        <a class="btn-text" href="https://github.com/matthewmackes/MACKESCODE-AI-PROXY" target="_blank" rel="noopener">Source Code &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="spec-strip" aria-label="Project specifications">
+    <div class="wrap">
+      <dl class="spec-grid">
+        <div class="spec-item"><dt>Category</dt><dd>AI infrastructure</dd></div>
+        <div class="spec-item"><dt>Primary language</dt><dd>Python</dd></div>
+        <div class="spec-item"><dt>Platform</dt><dd>Linux &middot; Fedora&nbsp;44</dd></div>
+        <div class="spec-item"><dt>Sheet</dt><dd>E-01</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="subsection">
+    <div class="wrap">
+      <span class="eyebrow">Features</span>
+      <h2>One console for every model and every session.</h2>
+      <p class="section-lede">
+        MACKESCODE sits between your tools and the model backends, presenting
+        a single Anthropic-compatible endpoint while a web console gives you
+        control over cost, autonomy, and observability.
+      </p>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3><span class="idx">01</span>Anthropic-compatible proxy</h3>
+          <p>A drop-in local endpoint that speaks the Anthropic Messages API, letting existing clients target multiple model backends without code changes.</p>
+        </div>
+        <div class="feature">
+          <h3><span class="idx">02</span>Claude Code launcher</h3>
+          <p>Spin up, name, and reattach to Claude Code sessions from one place &mdash; each one routed through the proxy with its own configuration.</p>
+        </div>
+        <div class="feature">
+          <h3><span class="idx">03</span>Persistent terminal sessions</h3>
+          <p>Long-running terminal sessions survive disconnects and page reloads, so agents keep working while you step away.</p>
+        </div>
+        <div class="feature">
+          <h3><span class="idx">04</span>Autonomy &amp; permission controls</h3>
+          <p>Per-session guardrails decide what an agent may run unattended and what needs a human in the loop.</p>
+        </div>
+        <div class="feature">
+          <h3><span class="idx">05</span>Cost &amp; budget tracking</h3>
+          <p>Live token and spend accounting per session and per backend, with budget ceilings that stop runaway usage.</p>
+        </div>
+        <div class="feature">
+          <h3><span class="idx">06</span>Image prompt studio</h3>
+          <p>A dedicated surface for composing, iterating on, and organising image-generation prompts alongside your coding sessions.</p>
+        </div>
+        <div class="feature">
+          <h3><span class="idx">07</span>Fleet-wide agent monitoring</h3>
+          <p>A single dashboard shows every running agent across the fleet &mdash; status, activity, and resource use at a glance.</p>
+        </div>
+        <div class="feature">
+          <h3><span class="idx">08</span>Multiple backends, side by side</h3>
+          <p>Route different sessions to different providers or local models simultaneously and compare behaviour without reconfiguring clients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="subsection">
+    <div class="wrap">
+      <span class="eyebrow">Languages used</span>
+      <h2>Python core, web console on top.</h2>
+      <p class="section-lede">
+        The proxy and orchestration layer are written in Python; the console
+        is a browser front-end served directly from the same process.
+      </p>
+      <div class="lang-list">
+        <div class="lang">
+          <div class="lang-name"><strong>Python</strong><span class="lang-role">Proxy &amp; orchestration</span></div>
+          <p>The Anthropic-compatible proxy, session manager, budgeting, and monitoring services &mdash; the primary language of the project.</p>
+        </div>
+        <div class="lang">
+          <div class="lang-name"><strong>JavaScript</strong><span class="lang-role">Web console</span></div>
+          <p>The unified console UI: terminal views, dashboards, and the image prompt studio, delivered to the browser.</p>
+        </div>
+        <div class="lang">
+          <div class="lang-name"><strong>HTML &amp; CSS</strong><span class="lang-role">Console surface</span></div>
+          <p>The layout and styling of the console, kept lightweight and dependency-light to match the rest of the studio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="subsection">
+    <div class="wrap">
+      <span class="eyebrow">Testing</span>
+      <h2>Verified against the API contract it emulates.</h2>
+      <p class="section-lede">
+        Because the proxy stands in for a real API, correctness means matching
+        the contract exactly &mdash; and proving budgets and permissions hold
+        under load.
+      </p>
+      <div class="panel">
+        <ul class="checklist">
+          <li><strong>Contract tests</strong> assert request and response shapes match the Anthropic Messages API.</li>
+          <li><strong>Streaming replay</strong> exercises server-sent event streams end to end for parity with upstream.</li>
+          <li><strong>Session lifecycle tests</strong> cover attach, detach, reconnect, and persistence across restarts.</li>
+          <li><strong>Budget &amp; limit tests</strong> confirm spend ceilings halt sessions before they overrun.</li>
+          <li><strong>Permission-boundary tests</strong> verify autonomy controls block disallowed actions.</li>
+          <li><strong>Runs in production</strong> daily on studio hardware &mdash; the same build you see in the repo.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="subsection">
+    <div class="wrap">
+      <span class="eyebrow">Compliance &amp; security</span>
+      <h2>Keys stay local. Nothing leaves the host uninvited.</h2>
+      <p class="section-lede">
+        MACKESCODE is designed to run entirely on hardware you control, so
+        credentials and prompts never transit a third-party service beyond the
+        model backend you explicitly choose.
+      </p>
+      <div class="panel">
+        <ul class="checklist">
+          <li><strong>Local-first</strong> &mdash; the proxy runs on your own host; no cloud dependency for the control plane.</li>
+          <li><strong>Credential isolation</strong> &mdash; API keys are held server-side and never exposed to the browser.</li>
+          <li><strong>Explicit routing</strong> &mdash; traffic reaches only the backends you configure, nothing implicit.</li>
+          <li><strong>Auditable spend</strong> &mdash; every request is accounted for, giving a clear record of usage and cost.</li>
+          <li><strong>Permission model</strong> &mdash; autonomy is opt-in per session, defaulting to human-in-the-loop.</li>
+          <li><strong>Open source</strong> &mdash; the full implementation is published for inspection.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="subpage-cta">
+    <h2>Back to the catalog</h2>
+    <a class="btn-cta btn-lg" href="index.html#products">All three products &rarr;</a>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-contact">
+      <span class="footer-heading">Contact</span>
+      <div class="footer-links">
+        <a href="https://matthewmackes.com" target="_blank" rel="me noopener">R&eacute;sum&eacute; &mdash; matthewmackes.com</a>
+        <a href="https://www.linkedin.com/in/matthewmackes/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:matthewmackes@gmail.com">matthewmackes@gmail.com</a>
+        <a href="https://github.com/matthewmackes" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Matthew Mackes &middot; Build it right. Run it yourself.</span>
+      <a href="https://github.com/matthewmackes" target="_blank" rel="noopener">github.com/matthewmackes</a>
+    </div>
+    <div class="footer-register">
+      <span>EPHEMERAL.TEAM &middot; SHEET E-01 &middot; MACKESCODE AI PROXY &middot; REV. A &middot; 2026</span>
+      <span>DESIGNED ON FEDORA 44 &middot; BUFFALO, NY</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
